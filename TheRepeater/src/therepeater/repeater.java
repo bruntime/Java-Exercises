@@ -1,5 +1,5 @@
-//create a class named S1P1
-public class S1P1
+//create a class named repeater
+public class repeater
 {
 //this is the main method
     public static void main (String[] args) //main method header

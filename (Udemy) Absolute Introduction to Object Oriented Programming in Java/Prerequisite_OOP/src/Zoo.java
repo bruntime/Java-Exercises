@@ -1,14 +1,16 @@
 public class Zoo {
     public static void main(String args[]) {
-        Animal cat = new Animal ("cat", 4, "female", 20, "meat", 18);
-        Animal dog = new Animal ("dog", 1, "female", 8, "meat", 23);   
-    
-   cat.information();
-   cat.eat();
-   cat.sleep();
-        System.out.println("\n");        
-   dog.information();
-   dog.eat();
-   dog.sleep();
+        Animal bird = new Animal (4, "F", 36);
+        Animal hippo = new Animal (1, "M", 9);
+        
+        bird.eat();
+        hippo.sleep();
+        
+        Cat Tiny = new Cat(3, "M", 4);
+        Tiny.eat();
+        Tiny.sleep();
+        
+        Dog Shadow = new Dog(6, "F", 25);
+        Shadow.sleep();      
     }
 }

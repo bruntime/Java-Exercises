@@ -11,6 +11,9 @@ public class Zoo {
         Tiny.sleep();
         
         Dog Shadow = new Dog(6, "F", 25);
-        Shadow.sleep();      
+        Shadow.sleep();  
+        
+        Chicken chick1 = new Chicken(1, "M", 7);
+        chick1.fly();
     }
 }

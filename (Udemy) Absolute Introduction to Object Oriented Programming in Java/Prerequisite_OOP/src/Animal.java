@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     int age;
     String gender;
@@ -10,12 +10,6 @@ public class Animal {
         this.gender = gender;
         this.weightInPounds = weightInPounds;
     }
-
-    public void information() {
-        System.out.println("Age(yrs): " + age);
-        System.out.println("Sex: " + gender);
-        System.out.println("Weight(lbs): " + weightInPounds);
-    }   
     
       public void eat() {
         System.out.println("Consumes food");                     
@@ -24,4 +18,6 @@ public class Animal {
     public void sleep() {
         System.out.println("Sleeps long hours daily");
     }
+    
+    public abstract void move();
  }

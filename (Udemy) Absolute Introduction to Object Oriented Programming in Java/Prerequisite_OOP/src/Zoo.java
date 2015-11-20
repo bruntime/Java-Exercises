@@ -1,19 +1,20 @@
 public class Zoo {
     public static void main(String args[]) {
-        Animal bird = new Animal (4, "F", 36);
-        Animal hippo = new Animal (1, "M", 9);
+        Sparrow sparrow1 = new Sparrow(4, "F", 6);
+        //sparrow1.move();
         
-        bird.eat();
-        hippo.sleep();
+        Animal fish1 = new Fish(1, "M", 2);
+        //fish1.move();
         
-        Cat Tiny = new Cat(3, "M", 4);
-        Tiny.eat();
-        Tiny.sleep();
-        
-        Dog Shadow = new Dog(6, "F", 25);
-        Shadow.sleep();  
-        
-        Chicken chick1 = new Chicken(1, "M", 7);
-        chick1.fly();
+        Flyable flyingbird = new Sparrow(2, "F", 4);
+        flyingbird.fly();
+
+        moveAnimal(fish1);
+        moveAnimal(sparrow1);
+    }
+    
+    //polymorphism
+    public static void moveAnimal(Animal animal){
+        animal.move();
     }
 }

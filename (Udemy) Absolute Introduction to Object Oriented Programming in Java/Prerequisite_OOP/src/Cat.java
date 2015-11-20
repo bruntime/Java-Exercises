@@ -7,4 +7,9 @@ public class Cat extends Animal{
     public void Jumps() {
         System.out.println("Jumps high....");
     }   
+
+    @Override
+    public void move() {
+        System.out.println("Jumps...");
+    }
 }
